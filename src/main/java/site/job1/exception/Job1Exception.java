@@ -6,15 +6,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Getter
-public abstract class HodologException extends RuntimeException {
+public abstract class Job1Exception extends RuntimeException {
 
     public final Map<String, String> validation = new HashMap<>();
 
-    public HodologException(String message) {
+    public Job1Exception(String message) {
         super(message);
     }
 
-    public HodologException(String message, Throwable cause) {
+    public Job1Exception(String message, Throwable cause) {
         super(message, cause);
     }
 

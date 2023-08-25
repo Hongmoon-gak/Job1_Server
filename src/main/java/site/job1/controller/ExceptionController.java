@@ -1,6 +1,6 @@
 package site.job1.controller;
 
-import site.job1.exception.HodologException;
+import site.job1.exception.Job1Exception;
 import site.job1.response.ErrorResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -33,8 +33,8 @@ public class ExceptionController {
     }
 
     @ResponseBody
-    @ExceptionHandler(HodologException.class)
-    public ResponseEntity<ErrorResponse> hodologException(HodologException e) {
+    @ExceptionHandler(Job1Exception.class)
+    public ResponseEntity<ErrorResponse> Job1Exception(Job1Exception e) {
         int statusCode = e.getStatusCode();
 
         ErrorResponse body = ErrorResponse.builder()

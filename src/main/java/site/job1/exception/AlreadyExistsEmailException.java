@@ -1,6 +1,6 @@
 package site.job1.exception;
 
-public class AlreadyExistsEmailException extends HodologException {
+public class AlreadyExistsEmailException extends Job1Exception {
 
     private static final String MESSAGE = "이미 가입된 이메일입니다.";
 
